@@ -28,6 +28,13 @@ public ModelAndView indexpage() {
 
 }
 
+@RequestMapping("/results")
+public ModelAndView resultspage() {
+//	ModelAndView mav = new ModelAndView("index");
+//	return mav;
+	return new ModelAndView("results");
+
+}
 //@RequestMapping("/food")
 //public ModelAndView listFood(
 //		@RequestParam(value="keyword", required=false) String keyword,
