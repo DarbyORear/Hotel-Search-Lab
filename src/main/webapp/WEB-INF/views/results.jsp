@@ -9,6 +9,42 @@
 <title>Results Page</title>
 </head>
 <body>
-<h1>Congrats! There are hotels available in that city.</h1>
+<h1>Congrats! There are hotels available in ${city}.</h1>
+
+ 
+<table>
+	<thead>
+		<th>City</th><th>Name</th><th>Price Per Night</th>
+	</thead>
+				<tbody>
+				<c:forEach var="hotel" items="${hotels}">
+					
+				<tr>
+					<td>${hotel.city}</td>
+					<td>${hotel.name}</td>
+					<td>${hotel.pricePerNight}</td>
+				</tr>
+
+				</c:forEach>
+			</tbody>
+
+</table>
+
+
+
+<!-- I want to display different results depending on which city the person chooses.
+Can I do that in one jsp? -->
+
+<!-- Detroit results: -->
+
+<!-- Ann Arbor results: -->
+
+<!-- Grand Rapids results: -->
+
+<!-- Luzerne results: -->
+
+
+
+<a href = "/goback">Back</a>
 </body>
 </html>

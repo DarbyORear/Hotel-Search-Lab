@@ -12,11 +12,13 @@
 <h1>Hotel Search</h1>
 
 <form action="/results">
-<select name="City">
+<select name="city">
   <option value="Detroit">Detroit</option>
   <option value="Ann Arbor">Ann Arbor</option>
   <option value="Grand Rapids">Grand Rapids</option>
   <option value="Luzerne">Luzerne</option>
+  <option value="all">View All</option>
+  
 </select>
 <input type="submit" value="Submit">
 </form>

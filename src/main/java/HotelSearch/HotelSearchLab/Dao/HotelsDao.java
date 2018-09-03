@@ -36,6 +36,14 @@ public class HotelsDao {
 				.getResultList();
 	}
 	
+	//this is the method that does the actual search on the database by name
+	public List<Hotel> findByCity(String city) {
+		
+		return em.createQuery("from Hotel where name : cityName", Hotel.class)
+				.setParameter("cityName", city)
+				.getResultList();
+	}
+	
 	public void create(Hotel hotel) {
 		em.persist(hotel);
 	}

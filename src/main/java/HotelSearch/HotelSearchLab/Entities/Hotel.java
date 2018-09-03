@@ -18,6 +18,8 @@ public class Hotel {
 	@Column(name = "price_per_night")
 	private Integer pricePerNight;
 	
+	public Hotel() {};
+	
 	public Hotel(Long id, String city, String name, Integer pricePerNight) {
 		super();
 		this.id = id;
