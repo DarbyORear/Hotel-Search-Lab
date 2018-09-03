@@ -29,18 +29,18 @@ public class HotelsDao {
 	}
 
 	//this is the method that does the actual search on the database by name
-	public List<Hotel> findByName(String name) {
-		
-		return em.createQuery("from Hotel where name like :n", Hotel.class)
-				.setParameter("n", "%" + name + "%")
-				.getResultList();
-	}
+//	public List<Hotel> findByName(String name) {
+//		
+//		return em.createQuery("from Hotel where name like :n", Hotel.class)
+//				.setParameter("n", "%" + name + "%")
+//				.getResultList();
+//	}
 	
 	//this is the method that does the actual search on the database by name
 	public List<Hotel> findByCity(String city) {
 		
-		return em.createQuery("from Hotel where name : cityName", Hotel.class)
-				.setParameter("cityName", city)
+		return em.createQuery("FROM Hotel where city = :city", Hotel.class)
+				.setParameter("city", city)
 				.getResultList();
 	}
 	

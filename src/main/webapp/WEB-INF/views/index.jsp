@@ -11,7 +11,7 @@
 <body>
 <h1>Hotel Search</h1>
 
-<form action="/results">
+<form action="/specific-results" method = "POST">
 <select name="city">
   <option value="Detroit">Detroit</option>
   <option value="Ann Arbor">Ann Arbor</option>

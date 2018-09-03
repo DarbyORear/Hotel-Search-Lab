@@ -13,7 +13,9 @@ public class Hotel {
 
 	@Id @GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
+	@Column
 	private String city;
+	@Column
 	private String name;
 	@Column(name = "price_per_night")
 	private Integer pricePerNight;
