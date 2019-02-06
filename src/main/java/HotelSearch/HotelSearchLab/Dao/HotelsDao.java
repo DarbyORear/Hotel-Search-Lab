@@ -44,6 +44,13 @@ public class HotelsDao {
 				.getResultList();
 	}
 	
+	public List<Hotel> findByPrice(String pricePerNight) {
+		return em.createQuery("FROM Hotel where price = :pricePerNight", Hotel.class)
+				.setParameter("price", pricePerNight)
+				.getResultList();
+	}
+	
+	
 	public void create(Hotel hotel) {
 		em.persist(hotel);
 	}

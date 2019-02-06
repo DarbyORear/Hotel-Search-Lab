@@ -40,7 +40,6 @@ public ModelAndView showSpecificList(@RequestParam("city") String city) {
 //	List<Hotel>HotelsByCity = hotelsDao.findByCity(city);
 	List<Hotel>specificHotels = hotelsDao.findByCity(city);
 	ModelAndView mav = new ModelAndView("specific-results");
-//	mav.addObject("city", city);
 	mav.addObject("hotels", specificHotels);
 	return mav;
 }

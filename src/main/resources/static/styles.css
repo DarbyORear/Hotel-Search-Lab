@@ -1,0 +1,14 @@
+body {
+	background-color: blue;
+}
+
+.container {
+	margin-top: 200px;
+	text-align: center;
+
+}
+
+#drop {
+	background-color: black;
+	color: white;
+}

@@ -9,7 +9,6 @@
 <title>Results Page</title>
 </head>
 <body>
-<h1>Congrats! There are hotels available in ${city}.</h1>
 
  
 <table>

@@ -6,12 +6,15 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<link rel = "stylesheet" href = "https://bootswatch.com/4/lux/bootstrap.min.css">
+<link rel = "stylesheet" href = "styles.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <title>Home Page</title>
 </head>
 <body>
-<h1>Hotel Search</h1>
-
-<form action="/specific-results" method = "POST">
+<h3>Choose your city</h3>
+  <form action="/specific-results" method = "POST">
 <select name="city">
   <option value="Detroit">Detroit</option>
   <option value="Ann Arbor">Ann Arbor</option>
@@ -20,8 +23,19 @@
   <option value="all">View All</option>
   
 </select>
-<input type="submit" value="Submit">
+<button type = "submit">Search</button>
 </form>
+
+<div class="dropdown">
+  <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Dropdown button
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#">Action</a>
+    <a class="dropdown-item" href="#">Another action</a>
+    <a class="dropdown-item" href="#">Something else here</a>
+  </div>
+</div>
 
 
 </body>
